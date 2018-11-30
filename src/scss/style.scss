@@ -3,14 +3,16 @@
 
 body {
   margin: 0;  
-  font: 300 $font-size 'Roboto', sans-serif;  
+  font: 400 $font-size 'Roboto', sans-serif;  
   line-height: $line-height;
   color: $color-primary-text;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 h1,h2,h3,h4 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 a {
