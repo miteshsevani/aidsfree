@@ -134,7 +134,8 @@ p {
     bottom: -24px;
     letter-spacing: 0.1em; }
     .leadtext .button:hover {
-      background-color: #9824a0; }
+      background-color: #9824a0;
+      text-decoration: none; }
 
 .col {
   padding: 12px; }
