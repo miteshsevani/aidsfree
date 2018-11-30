@@ -3,17 +3,25 @@
 
 body {
   margin: 0;  
-  font: 400 19px 'Roboto', sans-serif;  
-  line-height: 1.5em;
+  font: 300 $font-size 'Roboto', sans-serif;  
+  line-height: $line-height;
+  color: $color-primary-text;
 }
 
 h1,h2,h3,h4 {
   margin: 0;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 a {
   text-decoration: none;
+  color: $color-link;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:visited {
+    text-decoration: none;
+  }
 }
 
 img {
@@ -50,7 +58,7 @@ p {
     margin: 0;
   }
   .leadtext {
-    margin-top: 0;
+    margin-top: 0;    
   }
 }
 
@@ -58,13 +66,18 @@ p {
   .small {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     img {
       height: 100%;
       max-height: 38px;
+      &.es {
+        max-height: 32px;
+      }
     }
   }
   .large {
     display: none;
+    align-items: center;
   }
 }
 
@@ -103,6 +116,7 @@ p {
     font-weight: bold;
     position: absolute;
     bottom: -24px;
+    letter-spacing: 0.1em;
     &:hover {
       background-color: darken($color-button,5%);
     }
@@ -161,8 +175,16 @@ p {
     .large {
       display: flex;
       justify-content: space-between;
+      
       img {
-        max-height: 40px;
+        max-height: 38px;
+        &.jg,
+        &.es {
+          max-height: 26px;          
+        }
+        &.ejaf {
+          max-height: 48px;
+        }
       }
     } 
   } 
