@@ -7,6 +7,20 @@
   <title>AIDSFree</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/style/style.css" />
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>  
+  <script language="JavaScript" src="https://ssl.geoplugin.net/javascript.gp?k=d15395acbb05d02d" type="text/javascript"></script>
+  <script>    
+    jQuery(document).ready(function($) {                  
+      if(geoplugin_countryName() === "United Kingdom") {
+        $('#donate').attr('href','http://link.justgiving.com/v1/campaign/donate/campaignId/22188?amount=30.00&currency=GBP&reference=ESI-LP&exitUrl=https%3A%2F%2Fwww.aidsfree.co.uk%3FjgDonationId%3DJUSTGIVING-DONATION-ID');
+      } else {
+        $('#donate').attr('href','http://link.justgiving.com/v1/campaign/donate/campaignId/22188?amount=30.00&currency=USD&reference=ESI-LP&exitUrl=https%3A%2F%2Fwww.aidsfree.co.uk%3FjgDonationId%3DJUSTGIVING-DONATION-ID');
+      }      
+    });
+  </script>  
 </head>
 <body>
   <section class="container top">
@@ -61,7 +75,11 @@
       <div class="content">
         <h3>Help stop the most vulnerable dying of AIDS. The Elton John AIDS Foundation is working with The Independent and The Evening Standard to raise money this Christmas to pay for people to be tested and make sure they receive the treatment they need.</h2>
       </div>      
-      <a class="button" href="http://link.justgiving.com/v1/campaign/donate/campaignId/22188?amount=30.00&currency=GBP&reference=ESI-LP&exitUrl=https%3A%2F%2Fwww.aidsfree.co.uk%3FjgDonationId%3DJUSTGIVING-DONATION-ID" target="_blank">Donate</a>
+      <a id="donate" class="button" href="http://link.justgiving.com/v1/campaign/donate/campaignId/22188?amount=30.00&currency=GBP&reference=ESI-LP&exitUrl=https%3A%2F%2Fwww.aidsfree.co.uk%3FjgDonationId%3DJUSTGIVING-DONATION-ID" target="_blank">Donate</a>
+
+      
+
+
     </section>
   </section>
   <section class="container main">
